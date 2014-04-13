@@ -7,7 +7,7 @@ object Exercises {
   }                                               //> genRandomArrOfLengthN: (n: Int)scala.collection.immutable.IndexedSeq[Int]
   
   val arr:Array[Int] = genRandomArrOfLengthN(5).toArray
-                                                  //> arr  : Array[Int] = Array(1, 1, 0, 1, 4)
+                                                  //> arr  : Array[Int] = Array(4, 1, 1, 2, 3)
   
   //2 & 3
   def swapAdjacentElements(arr: Array[Int]) = {
@@ -22,7 +22,7 @@ object Exercises {
   }                                               //> swapAdjacentElements: (arr: Array[Int])scala.collection.immutable.IndexedSeq
                                                   //| [Int]
   
-  var arr2 = swapAdjacentElements(arr)            //> arr2  : scala.collection.immutable.IndexedSeq[Int] = Vector(1, 1, 1, 0, 4)
+  var arr2 = swapAdjacentElements(arr)            //> arr2  : scala.collection.immutable.IndexedSeq[Int] = Vector(1, 4, 2, 1, 3)
 
  //4
  def prod(arr: Array[Int]) = {
@@ -34,12 +34,12 @@ object Exercises {
  //5
  def computeAverage(arr: Array[Int]): Double = arr.sum * 1.0 / arr.size
                                                   //> computeAverage: (arr: Array[Int])Double
- computeAverage(arr)                              //> res1: Double = 1.4
+ computeAverage(arr)                              //> res1: Double = 2.2
  
  //6
- arr.reverse                                      //> res2: Array[Int] = Array(4, 0, 1, 1, 1)
+ arr.reverse                                      //> res2: Array[Int] = Array(3, 1, 2, 4, 1)
  
  //7
- arr.distinct                                     //> res3: Array[Int] = Array(1, 0, 4)
+ arr.distinct                                     //> res3: Array[Int] = Array(1, 4, 2, 3)
  
 }
