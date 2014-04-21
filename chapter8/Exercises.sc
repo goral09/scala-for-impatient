@@ -1,8 +1,10 @@
-object Exercises {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; def main(args: Array[String])=$execute{;$skip(53); 
-	val s1 = SimpleItem(2.5, "Chleb");System.out.println("""s1  : SimpleItem = """ + $show(s1 ));$skip(36); 
-	val s2 = SimpleItem(1.5, "Cukier");System.out.println("""s2  : SimpleItem = """ + $show(s2 ));$skip(40); 
+object Exercises {
+	val s1 = SimpleItem(2.5, "Chleb")         //> s1  : SimpleItem = Chleb : 2.5
+	val s2 = SimpleItem(1.5, "Cukier")        //> s2  : SimpleItem = Cukier : 1.5
 	
-	val bundle = new Bundle(List(s1,s2));System.out.println("""bundle  : Bundle = """ + $show(bundle ))}
+	val bundle = new Bundle(List(s1,s2))      //> bundle  : Bundle = 
+                                                  //| Chleb : 2.5
+                                                  //| Cukier : 1.5
 	
 }
 trait Item {
